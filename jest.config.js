@@ -1,9 +1,5 @@
-// jest.config.js - Root Jest configuration file
-
 module.exports = {
-  // Base configuration for all tests
   projects: [
-    // Server-side tests configuration
     {
       displayName: 'server',
       testEnvironment: 'node',
@@ -17,8 +13,6 @@ module.exports = {
         '!**/node_modules/**',
       ],
     },
-    
-    // Client-side tests configuration
     {
       displayName: 'client',
       testEnvironment: 'jsdom',
@@ -40,8 +34,6 @@ module.exports = {
       ],
     },
   ],
-  
-  // Global configuration
   verbose: true,
   collectCoverage: true,
   coverageReporters: ['text', 'lcov', 'clover', 'html'],
@@ -54,4 +46,4 @@ module.exports = {
     },
   },
   testTimeout: 10000,
-}; 
+};
